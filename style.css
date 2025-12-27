@@ -968,7 +968,7 @@ input {
 
 @media (max-width: 560px) {
   .card {
-    grid-column: span 6;
+    grid-column: span 12;
   }
 
   .product-detail-grid {
@@ -981,4 +981,5 @@ input {
     grid-column: span 6;
   }
 }
+
 
