@@ -967,6 +967,9 @@ input {
 }
 @media (max width: 560px){
    .product-detail-grid {
+     .card {
+    grid-column: span 6;
+     }
     grid-template-columns: 1fr;
   }
 }
@@ -975,6 +978,7 @@ input {
     grid-column: span 6;
   }
 }
+
 
 
 
