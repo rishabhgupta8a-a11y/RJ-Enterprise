@@ -965,12 +965,17 @@ input {
     transform: rotate(180deg);
   }
 }
-
+@media (max width: 560px){
+   .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 360px) {
   .card {
     grid-column: span 6;
   }
 }
+
 
 
 
