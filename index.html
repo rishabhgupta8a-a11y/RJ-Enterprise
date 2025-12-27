@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RJ Enterprise Furniture Catalog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="header-inner">
+        <a class="brand" href="#" id="brandLink" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text" id="brandText"></span>
+        </a>
+
+        <div class="header-search" role="search">
+          <input
+            id="searchInput"
+            class="search-input"
+            type="search"
+            placeholder="Search product"
+            autocomplete="off"
+          />
+        </div>
+
+        <nav class="header-nav" aria-label="Primary">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span class="sr-only">Menu</span>
+            <span class="hamburger" aria-hidden="true">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </span>
+          </button>
+
+          <ul class="nav-menu" id="navMenu">
+            <li class="nav-item nav-dropdown">
+              <button class="nav-link" id="categoryMenuButton" aria-expanded="false" aria-controls="categoryMenu">
+                Product Categories
+              </button>
+              <ul class="dropdown" id="categoryMenu" role="menu" aria-label="Product categories"></ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="#price">Price List</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <div class="hero-copy" aria-label="Hero text">
+            <h1 class="hero-title" id="heroTitle"></h1>
+            <p class="hero-description" id="heroDescription"></p>
+            <div class="hero-meta" id="heroMeta"></div>
+          </div>
+
+          <div class="hero-slider" aria-label="Hero image slider">
+            <div class="slider-frame">
+              <img class="slider-image" id="heroImage" alt="" />
+            </div>
+            <button class="slider-btn slider-btn-left" id="heroPrev" aria-label="Previous slide">
+              &#10094;
+            </button>
+            <button class="slider-btn slider-btn-right" id="heroNext" aria-label="Next slide">
+              &#10095;
+            </button>
+            <div class="slider-dots" id="heroDots" aria-label="Slide indicators"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-bar" aria-label="Category filters">
+        <div class="category-inner" id="categoryBar"></div>
+      </section>
+
+      <section class="catalog" id="catalog" aria-label="Product catalog">
+        <div class="catalog-head">
+          <div class="results" id="resultsLabel"></div>
+          <div class="active-filters" id="activeFilters"></div>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+        <nav class="pagination" aria-label="Pagination">
+          <button class="page-btn" id="pagePrev">Previous</button>
+          <div class="page-numbers" id="pageNumbers"></div>
+          <button class="page-btn" id="pageNext">Next</button>
+        </nav>
+      </section>
+
+      <section class="info" id="location" aria-label="Location section">
+        <div class="info-inner" id="locationSection"></div>
+      </section>
+
+      <section class="info" id="price" aria-label="Price list section">
+        <div class="info-inner" id="priceSection"></div>
+      </section>
+
+      <section class="info" id="about" aria-label="About us section">
+        <div class="info-inner" id="aboutSection"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner" id="footerText"></div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
