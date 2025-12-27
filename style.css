@@ -976,8 +976,9 @@ input {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 350px) {
   .card {
     grid-column: span 6;
   }
 }
+
