@@ -116,7 +116,7 @@ input {
 .header-search {
   display: flex;
   align-items: center;
-  width: 80px;
+  width: 40px;
   flex: 1;
 }
 
@@ -971,6 +971,7 @@ input {
     grid-column: span 6;
   }
 }
+
 
 
 
