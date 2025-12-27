@@ -976,11 +976,12 @@ input {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .card {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 }
+
 
 
 
