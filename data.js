@@ -61,7 +61,7 @@ window.FURNITURE_DATA = {
       id: 1,
       name: "Folding Chair With Plastic Seating",
       category: "Folding Chair",
-      image: "iamge/20251224_134441.png",
+      image: "iamge/20250628_110321.png",
       description: "Folding Chair With Plastic Seating For long Life",
       hiddenTags: ["student", "small-room", "budget", "plastic", "home-study", "folding Chair", "cafe Furniture", "cafe"],
     },
@@ -166,4 +166,5 @@ window.FURNITURE_DATA = {
       hiddenTags: ["family", "big", "storage", "wardrobe"],
     }
   ]
+
 };
