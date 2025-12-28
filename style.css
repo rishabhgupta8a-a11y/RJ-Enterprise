@@ -966,18 +966,22 @@ input {
   }
 }
 @media (max width: 560px){
-   .product-detail-grid {
+   .product-detail-grid {  
+     grid-column: span 12;
+   }
      .card {
-    grid-column: span 6;
+  grid-template-columns: 1fr;
      }
-    grid-template-columns: 1fr;
-  }
 }
 @media (max-width: 360px) {
   .card {
     grid-column: span 6;
   }
+   .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 
 
 
