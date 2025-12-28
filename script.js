@@ -162,7 +162,7 @@
     els.categoryBar.appendChild(allChip);
 
     const allCategories = Array.from(new Set((DATA.products || []).map((p) => p.category))).filter(Boolean).sort();
-    const visibleCount = 4;
+    const visibleCount = 3;
 
     let visible = allCategories.slice(0, visibleCount);
     let more = allCategories.slice(visibleCount);
@@ -612,3 +612,4 @@
 
   init();
 })();
+
